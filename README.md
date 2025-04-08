@@ -11,7 +11,7 @@ Pre-trained [vit_small_checkpoint-19.pth](https://drive.google.com/file/d/1F_wK7
 
 
 ```
-cd ./lmim_pretain/
+cd ./lmim_pretrain
 
 TEACHER_MODEL_PATH='../vit_small_checkpoint-19.pth'
 CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 python -m torch.distributed.launch \
