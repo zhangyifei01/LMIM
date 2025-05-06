@@ -102,6 +102,10 @@ OMP_NUM_THREADS=1 python -m torch.distributed.launch --nproc_per_node=$opt_nproc
     --beam_width 0 
 ```
 
+### Setting
+
+The recognizer uses a 12-layer ViT-Small as the encoder and a 6-layer Transformer as the decoder. For the English dataset, the total number of categories is 97, the maximum sequence length is set to 25, and the number of trainable parameters is 35.8M. For the Chinese dataset, the total number of categories is 7937, the maximum sequence length is set to 40, and the number of trainable parameters is 43.8M.
+
 ### Dataset
 
 * English pre-train： [Union14M](https://github.com/Mountchicken/Union14M)
